@@ -25,191 +25,392 @@
             background-repeat: no-repeat;
         }
 
-        .container {
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            overflow: hidden;
-            height: 100vh;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.633);
+        @media only screen and (min-width: 1100px) and (max-width: 1500px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                overflow: hidden;
+                height: 100vh;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.633);
+            }
+
+            .description {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                position: fixed;
+                top: 0;
+                height: 10h;
+                width: 100%;
+                background-color: #0000004f;
+                z-index: 10;
+            }
+
+            .logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 10px;
+                border-radius: 50px;
+
+            }
+
+            .logo img {
+                height: 40px;
+                width: 40px;
+            }
+
+            .logo p {
+                color: rgb(255, 97, 97);
+                font-weight: bold;
+                font-size: 20px;
+                cursor: pointer;
+            }
+
+            .list {
+                width: 800px;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                gap: 40px;
+            }
+
+            ul li {
+
+                list-style: none;
+            }
+
+            ul li a {
+                text-decoration: none;
+                font-size: 25px;
+                color: white;
+                font-weight: 500;
+                cursor: pointer;
+            }
+
+            .search input {
+                height: 35px;
+                width: 300px;
+                border-radius: 15px;
+                background-color: transparent;
+                border: 0.5px solid white;
+                color: white;
+                font-size: 16px;
+                padding-left: 18px;
+                cursor: pointer;
+            }
+
+            #createAcntbtn {
+                font-size: 16px;
+                width: 80px;
+                height: 35px;
+                border-radius: 25px;
+                border: 1px solid white;
+                background-color: transparent;
+                color: rgb(255, 255, 255);
+                cursor: pointer;
+            }
+
+            .mainSection {
+                position: relative;
+                margin-top: 12vh;
+                display: flex;
+                align-items: center;
+                height: 88vh;
+                width: 100%;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                gap: 50px;
+                align-items: center;
+                width: 38%;
+                color: white;
+                font-size: 16px;
+                text-align: center;
+                height: 88vh;
+                margin-top: 25%;
+            }
+
+            #start:hover {
+                transform: scale(1.1);
+                border-radius: 50px;
+                transition: transform 0.3s linear;
+            }
+
+            button {
+                width: 120px;
+                height: 40px;
+                border-radius: 50px;
+                border: none;
+                margin: 15px;
+                cursor: pointer;
+            }
+
+            .content {
+                width: 62%;
+                height: 88vh;
+                display: flex;
+                position: absolute;
+                overflow-y: auto;
+                left: 38%;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content::-webkit-scrollbar {
+                display: none;
+            }
+
+            .section {
+                width: 70%;
+                height: 280px;
+                padding: 12px;
+                border-radius: 25px;
+                margin-top: 3vh;
+                color: white;
+                font-size: 16px;
+                font-weight: 500;
+                text-align: center;
+                letter-spacing: 2px;
+                line-height: 30px;
+                margin-bottom: 10px;
+                background-color: #00000041;
+            }
+
+            .section h2 {
+                font-size: 30px;
+                margin: 15px;
+            }
+
+            .section img {
+                height: 25px;
+                width: 80px;
+                margin: 30px 20px;
+                object-fit: cover;
+                object-position: left center;
+                background-color: #ffffffcd;
+                padding: 5px;
+                border-radius: 20px;
+                filter: contrast(2);
+                cursor: pointer;
+            }
+
+            .section .icon {
+                height: 45px;
+                width: 45px;
+                margin: 30px 20px;
+                padding: 0;
+                border-radius: 50px;
+                border: 1px solid white;
+                filter: invert(1);
+                cursor: pointer;
+            }
         }
 
-        .description {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            position: fixed;
-            top: 0;
-            height: 10h;
-            width: 100%;
-            background-color: #0000004f;
-            z-index: 10;
+        @media screen and (min-width:720px) and (max-width: 1100px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                position: fixed;
+                overflow: hidden;
+                height: 100vh;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.633);
+            }
+
+            .description {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                position: fixed;
+                top: 0;
+                height: 10vh;
+                width: 100%;
+                background-color: #0000004f;
+                z-index: 10;
+            }
+
+            .logo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-left: 10px;
+                padding: 4px;
+                border-radius: 10px;
+
+            }
+
+            .logo img {
+                height: 30px;
+                width: 30px;
+            }
+
+            .logo p {
+                color: rgb(255, 97, 97);
+                font-weight: bold;
+                font-size: 8px;
+                cursor: pointer;
+            }
+
+            .list {
+                width: 400px;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-evenly;
+                gap: 15px;
+            }
+
+            ul li {
+
+                list-style: none;
+            }
+
+            ul li a {
+                text-decoration: none;
+                font-size: 16px;
+                color: white;
+                font-weight: 200;
+                cursor: pointer;
+            }
+
+            .search input {
+                height: 20px;
+                width: 180px;
+                border-radius: 15px;
+                background-color: transparent;
+                border: 0.5px solid white;
+                color: white;
+                font-size: 12px;
+                padding-left: 15px;
+                cursor: pointer;
+            }
+
+            #createAcntbtn {
+                font-size: 12px;
+                width: 60px;
+                height: 20px;
+                border-radius: 25px;
+                border: 1px solid rgb(0, 0, 0);
+                background-color: white;
+                color: rgb(0, 0, 0);
+                cursor: pointer;
+            }
+
+            .mainSection {
+                position: relative;
+                margin-top: 8vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100vh;
+                width: 100%;
+            }
+
+            .info {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 5px;
+                width: 70%;
+                margin-top: 60px;
+                color: white;
+                font-size: 14px;
+                height: 30vh;
+            }
+
+            #start:hover {
+                transform: scale(1.2);
+                border-radius: 50px;
+                transition: transform 0.3s linear;
+            }
+
+            button {
+                width: 80px;
+                height: 30px;
+                border-radius: 50px;
+                border: none;
+                margin: 15px;
+                cursor: pointer;
+            }
+
+            .content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 130px;
+                width: 100%;
+                height: 70vh;
+                position: absolute;
+                overflow-x: auto;
+                overflow-y: hidden;
+                left: 8%;
+                right: 8%;
+            }
+
+            .content::-webkit-scrollbar {
+                display: none;
+            }
+
+            .section {
+                width: 80%;
+                height: 300px;
+                padding: 15px;
+                border-radius: 25px;
+                margin: 100px 120px 0px 0px;
+                color: white;
+                font-size: 18px;
+                text-align: center;
+                letter-spacing: 2px;
+                line-height: 30px;
+                background-color: #00000041;
+            }
+
+            .section h2 {
+                text-align: center;
+                font-size: 30px;
+                margin: 15px;
+            }
+
+            .section img {
+                height: 20px;
+                width: 85px;
+                margin: 15px 5px;
+                object-fit: cover;
+                object-position: left center;
+                background-color: #ffffffcd;
+                padding: 5px;
+                border-radius: 20px;
+                filter: contrast(2);
+                cursor: pointer;
+            }
+
+            .section .icon {
+                height: 35px;
+                width: 35px;
+                margin: 15px 5px;
+                padding: 0;
+                border-radius: 50px;
+                border: 1px solid white;
+                filter: invert(1);
+                cursor: pointer;
+                text-align: center;
+            }
         }
 
-        .logo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 10px;
-            border-radius: 50px;
 
-        }
-
-        .logo img {
-            height: 40px;
-            width: 40px;
-        }
-
-        .logo p {
-            color: rgb(255, 97, 97);
-            font-weight: bold;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .list {
-            width: 800px;
-        }
-
-        ul {
-            display: flex;
-            justify-content: space-evenly;
-            gap: 40px;
-        }
-
-        ul li {
-
-            list-style: none;
-        }
-
-        ul li a {
-            text-decoration: none;
-            font-size: 25px;
-            color: white;
-            font-weight: 500;
-            cursor: pointer;
-        }
-
-        .search input {
-            height: 35px;
-            width: 300px;
-            border-radius: 15px;
-            background-color: transparent;
-            border: 0.5px solid white;
-            color: white;
-            font-size: 16px;
-            padding-left: 18px;
-            cursor: pointer;
-        }
-
-        #createAcntbtn {
-            font-size: 16px;
-            width: 80px;
-            height: 35px;
-            border-radius: 25px;
-            border: 1px solid white;
-            background-color: transparent;
-            color: rgb(255, 255, 255);
-            cursor: pointer;
-        }
-
-        .mainSection {
-            position: relative;
-            margin-top: 12vh;
-            display: flex;
-            align-items: center;
-            height: 88vh;
-            width: 100%;
-        }
-
-        .info {
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            gap: 50px;
-            align-items: center;
-            width: 38%;
-            color: white;
-            font-size: 16px;
-            text-align: center;
-            height: 88vh;
-            margin-top: 25%;
-        }
-        #start:hover {
-            transform: scale(1.1);
-            border-radius: 50px;
-            transition: transform 0.3s linear;
-        }
-
-        button {
-            width: 120px;
-            height: 40px;
-            border-radius: 50px;
-            border: none;
-            margin: 15px;
-            cursor: pointer;
-        }
-
-        .content {
-            width: 62%;
-            height: 88vh;
-            display: flex;
-            position: absolute;
-            overflow-y: auto;
-            left: 38%;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .content::-webkit-scrollbar {
-            display: none;
-        }
-
-        .section {
-            width: 70%;
-            height: 280px;
-            padding: 12px;
-            border-radius: 25px;
-            margin-top: 3vh;
-            color: white;
-            font-size: 16px;
-            font-weight: 500;
-            text-align: center;
-            letter-spacing: 2px;
-            line-height: 30px;
-            margin-bottom: 10px;
-            background-color: #00000041;
-        }
-
-        .section h2 {
-            font-size: 30px;
-            margin: 15px;
-        }
-
-        .section img {
-            height: 25px;
-            width: 80px;
-            margin: 30px 20px;
-            object-fit: cover;
-            object-position: left center;
-            background-color: #ffffffcd;
-            padding: 5px;
-            border-radius: 20px;
-            filter: contrast(2);
-            cursor: pointer;
-        }
-
-        .section .icon {
-            height: 45px;
-            width: 45px;
-            margin: 30px 20px;
-            padding: 0;
-            border-radius: 50px;
-            border: 1px solid white;
-            filter: invert(1);
-            cursor: pointer;
-        }
+        /* @media screen and (min-width:768px)
+        @media screen and (min-width:1024px) */
     </style>
 </head>
 
@@ -273,7 +474,7 @@
                     <h2 id="Contact">Contact</h2>
                     <p>"Reach out to us at the speed of sound: dial our melody-rich hotline, compose an email, or follow
                         the musical vibes on our social symphony. Your connection is our key signature in the world of
-                        Sangeet."</p>
+                        Sangeet."</p><br>
                     <p>Mob. no. : 0000000000 <br> E-mail : abc@gmail.com</p>
                     <img class="icon" src="images/facebook.png" alt="">
                     <img class="icon" src="images/instagram.png" alt="">
